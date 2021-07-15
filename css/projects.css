@@ -1,0 +1,68 @@
+.projects {
+    background-image: url(https://colorlib.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png);
+    padding-top: 40px;
+}
+
+.projects__section {
+    text-align: center;
+}
+
+.projects__section-title {
+    margin: 0 0 5px 0;
+    color: #545454;
+}
+
+.projects__section-info {
+    color: #8c9597;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.projects__wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.projects__gallery {
+    width: 100%;
+}
+
+.projects__photo {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 476px;
+}
+
+.projects__photo--photo1 {
+    background-image: url("/images/gallery1.jpg");
+}
+
+.projects__photo--photo2 {
+    background-image: url("/images/gallery2.jpg");
+}
+
+.projects__photo--photo3 {
+    background-image: url("/images/gallery3.jpg");
+}
+
+.projects__photo--photo4 {
+    background-image: url("/images/gallery4.jpg");
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .projects__gallery {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .projects__wrap {
+        flex-wrap: wrap;
+    }
+    .projects__photo {
+        height: 350px;
+    }
+}

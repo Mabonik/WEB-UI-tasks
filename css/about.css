@@ -1,0 +1,20 @@
+.about {
+    width: 100%;
+    padding: 65px 0 85px;
+    text-align: center;
+}
+
+.about__title {
+    color: #545454;
+    margin: 0 0 45px 0;
+}
+
+.about__info {
+    margin-bottom: 0;
+    line-height: 26px;
+    font-size: 16px;
+    color: #8c9597;
+    font-family: "Lato";
+    font-weight: 400;
+    padding: 0 50px 0 50px;
+}
