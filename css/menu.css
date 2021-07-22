@@ -100,19 +100,75 @@ a {
 }
 
 .menu__list-item {
+
+}
+
+
+.menu__list-item {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;
     display: inline-flex;
     justify-content: right;
     color: white;
-    margin-top: 39px;
+    margin-top: 20px;
+    position: relative;
 }
 
-.menu__list-item+.menu__list-item {
-    margin-left: 52px;
+.menu__list-item:hover {
+    background-color: rgba(190, 189, 189, 0.233);
 }
 
-.menu__list-item :hover {
+.menu__list-item:hover .menu__link {
     color: #ffde00;
 }
+
+.submenu__item:hover {
+    color: #ffde00;
+    background-color: rgba(190, 189, 189, 0.233);
+}
+
+.menu__list-item:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    opacity: 0;
+    transition: 0.3s;
+    top: 64px;
+    display: none;
+    left: 0;
+    width: 100%;
+}
+
+.submenu__item {
+    position: relative;
+}
+
+.menu__list-item:hover .submenu {
+    opacity: 1;
+}
+
+.submenu__link {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    white-space: nowrap;
+    text-align: center;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+
+/* .submenu__link:focus {
+    background-color: pink;
+} */
 
 .header__content-inner {
     text-align: center;
@@ -576,4 +632,53 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+@media (max-width: 992px) {
+    .header__top-inner {
+        justify-content: space-between;
+    }
+
+    .menu__list-item {
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .menu__list-item +.menu__list-item {
+        margin-left: 0;
+    }
+
+    .menu.open .menu__list-item {
+        text-align: center;
+        border-bottom: 1px solid grey;
+    }
+    
+    .submenu {
+        position: relative;
+        top: 0;
+    }
+
+    .submenu__item {
+        border-bottom: 1px solid grey;
+    }
+
+    .submenu__item:first {
+        border-top: 1px solid grey;
+    }
+
+    .submenu__item:hover {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
 }

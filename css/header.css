@@ -34,12 +34,6 @@
     font-weight: 600;
 }
 
-.menu__list-item {
-    margin-top: 40px;
-    max-width: 100%;
-    margin-right: 40px;
-}
-
 .header-content {
     padding: 240px 0 280px 0;
 }
@@ -144,7 +138,7 @@
         display: block;
     }
     .menu.open .menu__list-item {
-        margin-bottom: 20px;
+        margin-bottom: 0;
         text-align: center;
         border-bottom: 1px solid grey;
     }
