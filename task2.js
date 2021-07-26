@@ -1,9 +1,12 @@
 //Task #178(д)
 
 function solution(array) {
-  const result = [];
+  if(!Array.isArray(array)){
+    return
+  }
+  const result = []; 
   for (let i = 0; i < array.length; i++) {
-    const k = array[i];
+    const k = array[i]; 
     const inPow = Math.pow(2, i);
     const inFactorial = factorial(i);
     if (inPow < k < inFactorial) {
@@ -11,7 +14,6 @@ function solution(array) {
     }
   }
   return result;
-
   function factorial(n) {
     if (n === 0 || n === 1) {
       return 1;
